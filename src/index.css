@@ -31,7 +31,15 @@ a{
   width: 350px;
 }
 @media screen and (max-width:600px) {
-  .card{
+  .vedio{
     width: 100%;
   }
+  .search-bar{
+    width: 200px;
+  }
+.category-btn{
+  padding: 7px;
+  margin-right: 7px;
+}
+
 }

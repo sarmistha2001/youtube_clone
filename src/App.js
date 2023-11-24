@@ -15,7 +15,7 @@ export default function App() {
 <Navbar/>
 
 <Routes>
-  <Route path="/" exact element={<Feed/>}></Route>
+  <Route path="/youtube_clone" exact element={<Feed/>}></Route>
   <Route path="/video/:id" exact element={<VedioDetails/>}></Route>
   <Route path="/channel/:id" exact element={<ChannelDetails/>}></Route>
   <Route path="/search/:searchTerm" exact element={<SearchFeed/>}></Route>

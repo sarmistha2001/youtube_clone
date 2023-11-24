@@ -60,7 +60,7 @@ const VedioDetails = () => {
       <Stack direction={{ xs: "column", md: "row" }}>
         <Box flex={1}>
           <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
-            <ReactPlayer sx={{width:"100%"}}   url={`https://www.youtube.com/watch?v=${id}`} className="react-player"
+            <ReactPlayer  width="100%"   url={`https://www.youtube.com/watch?v=${id}`} className="react-player"
               controls />
             <Typography variant="h5" color="#fff" fontWeight="bold">{title}</Typography>
 
@@ -89,7 +89,7 @@ const VedioDetails = () => {
       
     
     <Box px={2} py={{md:1,xs:5}}  justifyContent="center" alignItems="center">
-      <Vedios vedios={videos} direction="column"></Vedios>
+      <Vedios vedios={videos} direction="column" width="100%"  ></Vedios>
 
     </Box>
 </Stack>

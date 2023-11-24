@@ -22,6 +22,7 @@ import { Stack, Box } from "@mui/material";
 import VideoCard from "./VideoCard";
 import ChannelCard from "./ChannelCard";
 import Typography from "@mui/material/Typography";
+import "../index.css"
 
 const Vedios = ({ vedios,direction }) => {
   if(!vedios?.length)  return 'Loading...'
@@ -29,8 +30,9 @@ const Vedios = ({ vedios,direction }) => {
     <Stack direction={direction||"row"} flexWrap="wrap" justifyContent="start" gap={2}>
       {vedios && vedios.length > 0 ? (
         vedios.map((item, idx) => (
-          <Box key={idx}>
-            {item.id && item.id.videoId && <VideoCard video={item}/> }
+          <Box key={idx} sx={{'@media screen and (max-width: 600px)': {
+            width: '100%'}}}>
+            {item.id && item.id.videoId && <VideoCard video={item}  /> }
             {item.id && item.id.channelId && <ChannelCard channelDetails={item}/> }
           </Box>
         ))

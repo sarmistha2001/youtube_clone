@@ -12,10 +12,10 @@ import "../index.css"
 const VideoCard = ({video:{id:{videoId},snippet}}) => {
   console.log(videoId,snippet)
     return (
-      <Card className="card"  sx={{width:{md:'250px',xs:'100%',sm:'320px'},boxShadow:"none",borderRadius:0 ,}}>
+      <Card className="card"   sx={{width:{md:'260px',xs:'100%',sm:'320px'},boxShadow:"none",borderRadius:0 ,}}>
    <Link to={videoId?`/video/${videoId}`:demoVideoUrl}>
    <CardMedia 
-  sx={{width:{xs:'100%',md:'100%',sm:'358px'},height:180}}
+  sx={{width:{xs:'100%',md:'100%',sm:'358px'},height:150}}
    
    alt={snippet?.title}
    image={snippet?.thumbnails?.high?.url}/>
