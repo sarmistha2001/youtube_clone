@@ -36,7 +36,7 @@ const Feed = () => {
           </Typography>
           <Vedios vedios={vedios}  />
           <Typography className="copyright" variant="body2" sx={{ mt: 1.5, color: '#fff' }}>
-            Copyright 2022 JSM Media
+            Copyright 2023 by SARMISTHA
           </Typography>
         </Box>
       </Stack>
