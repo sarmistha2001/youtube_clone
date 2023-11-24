@@ -30,8 +30,12 @@ a{
   outline: none;
   width: 350px;
 }
+
 @media screen and (max-width:600px) {
   .vedio{
+    width: 100%;
+  }
+  .card{
     width: 100%;
   }
   .search-bar{
@@ -43,3 +47,41 @@ a{
 }
 
 }
+@media screen and (min-width:600px) and  (max-width:700px)
+{
+  #box{
+    .card{
+      width:260px;
+    }
+
+  }
+}
+@media screen and (min-width:700px) and  (max-width:800px)
+{
+  #box{
+    .card{
+      width:300px;
+    }
+
+  }
+}
+@media screen and (min-width:800px) and  (max-width:900px)
+{
+  #box{
+    .card{
+      width:230px;
+    }
+
+  }
+}
+
+@media screen and (min-width:1200px)
+{
+  #box{
+    .card{
+      width: 315px;;
+    }
+
+  }
+}
+
